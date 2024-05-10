@@ -1,0 +1,28 @@
+var _path;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgDerpArrowDown(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    width: 10,
+    height: 22,
+    viewBox: "0 0 10 22",
+    fill: "none",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M5.73361 17.6651C6.42497 17.4122 7.11634 17.1412 7.82498 16.9154C8.14474 16.807 8.49038 16.7257 8.82742 16.7257C9.28544 16.7257 9.70028 17.1683 9.76078 17.6381C9.80399 17.9723 9.55335 18.4962 9.26817 18.4781C8.14471 18.4149 7.33236 19.1647 6.40767 19.5983C5.62124 19.9686 4.89535 20.4745 4.10893 20.8449C3.53856 21.1159 2.93361 21.3688 2.32003 21.4682C0.859532 21.703 -0.220707 20.61 0.0385526 19.1195C0.401516 17.0509 0.859541 15.0003 1.63732 13.0401C1.79287 12.6607 1.99165 12.2813 2.25091 11.9741C2.64844 11.5044 3.52125 11.7664 3.60767 12.3897C3.67681 12.9136 3.62498 13.4646 3.59041 14.0066C3.53856 14.8377 3.44349 15.6688 3.36571 16.5721C3.63362 16.5631 3.83238 16.6173 3.92744 16.536C5.50892 15.0997 6.83978 13.4466 7.72126 11.4502C8.46447 9.77906 8.78424 8.03561 8.30029 6.19282C7.61758 3.60025 5.66446 1.88393 3.08915 1.70326C2.80397 1.68519 2.52743 1.70326 2.32003 1.70326C1.97435 1.30579 2.12127 1.02576 2.37189 0.872198C2.93362 0.528932 3.54717 0.438604 4.20396 0.53797C7.26322 1.0348 9.60523 3.62736 9.94227 6.87936C10.1324 8.77635 9.85584 10.5921 9.06942 12.3265C8.42127 13.7537 7.56571 15.0274 6.59781 16.2288C6.26941 16.6444 5.92371 17.0418 5.58668 17.4483C5.62989 17.5116 5.68176 17.5838 5.73361 17.6651Z",
+    fill: "black"
+  })));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgDerpArrowDown);
+export default __webpack_public_path__ + "static/media/derp-arrow-down.50188cc0.svg";
+export { ForwardRef as ReactComponent };

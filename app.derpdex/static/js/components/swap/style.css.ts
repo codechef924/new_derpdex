@@ -1,0 +1,2 @@
+import "src/components/swap/style.css.ts.vanilla.css!=!../../../node_modules/@vanilla-extract/webpack-plugin/virtualFileLoader/dist/vanilla-extract-webpack-plugin-virtualFileLoader.cjs.js?{\"fileName\":\"src/components/swap/style.css.ts.vanilla.css\",\"source\":\"Ll8xMHQxNGxqMCB7CiAgd2lkdGg6IDEwMCUgIWltcG9ydGFudDsKfQ==\"}!../../../node_modules/@vanilla-extract/webpack-plugin/extracted/dist/vanilla-extract-webpack-plugin-extracted.cjs.js"
+export var rowconfig = '_10t14lj0';

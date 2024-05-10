@@ -1,0 +1,28 @@
+var _path;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgAccountStar(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    width: 14,
+    height: 18,
+    viewBox: "0 0 14 18",
+    fill: "none",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M5.39802 15.8334C5.46746 13.6902 4.67754 12.1007 3.84423 10.538C3.54042 9.97538 3.02829 9.72533 2.39462 9.76104C1.93457 9.78783 1.47452 9.81463 1.01446 9.78784C0.511004 9.75212 0.11171 9.38599 0.0162258 8.9395C-0.0705776 8.54659 0.198509 7.98402 0.641205 7.7697C0.945016 7.61789 1.29223 7.43928 1.62208 7.43928C2.75921 7.43035 3.40155 6.70705 3.96577 5.84978C4.63415 4.85856 4.99871 3.7334 5.31989 2.59037C5.45009 2.13495 5.56294 1.67951 5.71919 1.23302C5.86675 0.813313 6.15321 0.518633 6.61327 0.500772C7.06464 0.482912 7.37713 0.777594 7.58546 1.14372C7.72434 1.39375 7.81115 1.68844 7.85455 1.9742C7.95872 2.61715 8.0021 3.26904 8.09759 3.92092C8.34932 5.60866 9.86838 7.04638 11.4916 7.16247C12.0124 7.19818 12.5332 7.19818 13.0454 7.26962C13.5488 7.34106 13.9308 7.74291 13.9915 8.17155C14.061 8.65376 13.6964 9.19847 13.1495 9.36814C12.594 9.52888 12.0211 9.60925 11.4656 9.76998C9.24339 10.3951 8.07155 11.8239 7.84587 14.1992C7.7851 14.7886 7.80246 15.3869 7.75906 15.9762C7.72434 16.5388 7.48128 16.9942 7.01255 17.3068C6.35284 17.7443 5.53691 17.405 5.42407 16.6281C5.35462 16.2709 5.39802 15.9137 5.39802 15.8334Z",
+    fill: "black"
+  })));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgAccountStar);
+export default __webpack_public_path__ + "static/media/account-star.3eaefedd.svg";
+export { ForwardRef as ReactComponent };

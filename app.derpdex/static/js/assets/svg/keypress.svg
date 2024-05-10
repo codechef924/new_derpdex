@@ -1,0 +1,31 @@
+var _path, _path2;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgKeypress(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 23,
+    height: 19,
+    viewBox: "0 0 23 19",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M15.878 14.098C15.6446 14.098 15.4626 14.0327 15.332 13.902C15.2106 13.7713 15.15 13.5893 15.15 13.356V4.76C15.15 4.51733 15.2106 4.33533 15.332 4.214C15.4626 4.09267 15.6446 4.032 15.878 4.032C16.1113 4.032 16.2886 4.09267 16.41 4.214C16.5406 4.33533 16.606 4.51733 16.606 4.76V8.568H16.634L20.932 4.41C21.072 4.27933 21.2026 4.186 21.324 4.13C21.4546 4.06467 21.5993 4.032 21.758 4.032C21.9726 4.032 22.1266 4.088 22.22 4.2C22.3226 4.30267 22.3646 4.42867 22.346 4.578C22.3273 4.72733 22.248 4.872 22.108 5.012L17.642 9.268L17.67 8.554L22.318 13.034C22.486 13.1927 22.5746 13.356 22.584 13.524C22.5933 13.692 22.542 13.832 22.43 13.944C22.318 14.0467 22.1593 14.098 21.954 14.098C21.7673 14.098 21.618 14.0607 21.506 13.986C21.394 13.9113 21.2633 13.804 21.114 13.664L16.634 9.394H16.606V13.356C16.606 13.5893 16.5453 13.7713 16.424 13.902C16.3026 14.0327 16.1206 14.098 15.878 14.098Z",
+    fill: "black"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    d: "M10.5 7.6875C10.9641 7.6875 11.4092 7.50313 11.7374 7.17494C12.0656 6.84675 12.25 6.40163 12.25 5.9375V5.5C12.25 5.03587 12.0656 4.59075 11.7374 4.26256C11.4092 3.93437 10.9641 3.75 10.5 3.75H10.0625C9.59837 3.75 9.15325 3.93437 8.82506 4.26256C8.49687 4.59075 8.3125 5.03587 8.3125 5.5V6.8125H5.6875V5.5C5.6875 5.03587 5.50313 4.59075 5.17494 4.26256C4.84675 3.93437 4.40163 3.75 3.9375 3.75H3.5C3.03587 3.75 2.59075 3.93437 2.26256 4.26256C1.93437 4.59075 1.75 5.03587 1.75 5.5V5.9375C1.75 6.40163 1.93437 6.84675 2.26256 7.17494C2.59075 7.50313 3.03587 7.6875 3.5 7.6875H4.8125V10.3125H3.5C3.03587 10.3125 2.59075 10.4969 2.26256 10.8251C1.93437 11.1533 1.75 11.5984 1.75 12.0625V12.5C1.75 12.9641 1.93437 13.4092 2.26256 13.7374C2.59075 14.0656 3.03587 14.25 3.5 14.25H3.9375C4.40163 14.25 4.84675 14.0656 5.17494 13.7374C5.50313 13.4092 5.6875 12.9641 5.6875 12.5V11.1875H8.3125V12.5C8.3125 12.9641 8.49687 13.4092 8.82506 13.7374C9.15325 14.0656 9.59837 14.25 10.0625 14.25H10.5C10.9641 14.25 11.4092 14.0656 11.7374 13.7374C12.0656 13.4092 12.25 12.9641 12.25 12.5V12.0625C12.25 11.5984 12.0656 11.1533 11.7374 10.8251C11.4092 10.4969 10.9641 10.3125 10.5 10.3125H9.1875V7.6875H10.5ZM9.1875 5.5C9.1875 5.26794 9.27969 5.04538 9.44378 4.88128C9.60788 4.71719 9.83044 4.625 10.0625 4.625H10.5C10.7321 4.625 10.9546 4.71719 11.1187 4.88128C11.2828 5.04538 11.375 5.26794 11.375 5.5V5.9375C11.375 6.16956 11.2828 6.39212 11.1187 6.55622C10.9546 6.72031 10.7321 6.8125 10.5 6.8125H9.1875V5.5ZM3.5 6.8125C3.26794 6.8125 3.04538 6.72031 2.88128 6.55622C2.71719 6.39212 2.625 6.16956 2.625 5.9375V5.5C2.625 5.26794 2.71719 5.04538 2.88128 4.88128C3.04538 4.71719 3.26794 4.625 3.5 4.625H3.9375C4.16956 4.625 4.39212 4.71719 4.55622 4.88128C4.72031 5.04538 4.8125 5.26794 4.8125 5.5V6.8125H3.5ZM4.8125 12.5C4.8125 12.7321 4.72031 12.9546 4.55622 13.1187C4.39212 13.2828 4.16956 13.375 3.9375 13.375H3.5C3.26794 13.375 3.04538 13.2828 2.88128 13.1187C2.71719 12.9546 2.625 12.7321 2.625 12.5V12.0625C2.625 11.8304 2.71719 11.6079 2.88128 11.4438C3.04538 11.2797 3.26794 11.1875 3.5 11.1875H4.8125V12.5ZM8.3125 10.3125H5.6875V7.6875H8.3125V10.3125ZM9.1875 11.1875H10.5C10.7321 11.1875 10.9546 11.2797 11.1187 11.4438C11.2828 11.6079 11.375 11.8304 11.375 12.0625V12.5C11.375 12.7321 11.2828 12.9546 11.1187 13.1187C10.9546 13.2828 10.7321 13.375 10.5 13.375H10.0625C9.83044 13.375 9.60788 13.2828 9.44378 13.1187C9.27969 12.9546 9.1875 12.7321 9.1875 12.5V11.1875Z",
+    fill: "black"
+  })));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgKeypress);
+export default __webpack_public_path__ + "static/media/keypress.110104fd.svg";
+export { ForwardRef as ReactComponent };

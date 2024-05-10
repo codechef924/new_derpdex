@@ -1,0 +1,83 @@
+var _g, _path, _defs;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgSwitcherV2(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    width: 52,
+    height: 52,
+    viewBox: "0 0 52 52",
+    fill: "none",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    filter: "url(#filter0_d_124_7844)"
+  }, /*#__PURE__*/React.createElement("rect", {
+    x: 42,
+    y: 10,
+    width: 32,
+    height: 32,
+    rx: 16,
+    transform: "rotate(90 42 10)",
+    fill: "#AFBDC8"
+  }), /*#__PURE__*/React.createElement("rect", {
+    x: 44,
+    y: 8,
+    width: 36,
+    height: 36,
+    rx: 18,
+    transform: "rotate(90 44 8)",
+    stroke: "#D0DCE4",
+    strokeWidth: 4
+  }))), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M20.5527 28.823C20.2614 29.0198 20.103 29.145 19.932 29.2464C19.742 29.3598 19.5393 29.3717 19.343 29.2464C19.115 29.1033 18.9503 28.9005 19.0137 28.65C19.248 27.7196 19.609 26.825 20.2487 26.0675C20.521 25.7395 20.9454 25.6322 21.395 25.7872C21.5154 25.829 21.6484 25.8469 21.7497 25.9125C22.7314 26.5268 23.7067 27.147 24.6757 27.7792C24.8024 27.8627 24.8721 28.0297 24.9607 28.149C24.8404 28.6142 24.5047 28.7574 24.0994 28.65C23.7004 28.5486 23.3204 28.3637 22.9404 28.1848C22.611 28.0297 22.2944 27.8449 21.8827 27.6242C21.7307 28.322 21.9397 28.8707 22.1234 29.4194C22.326 29.9979 22.6997 30.475 23.2127 30.8508C24.4604 31.7573 26.9114 32.1748 28.6151 30.809C30.2681 29.485 31.2498 27.827 31.5791 25.8349C31.8008 24.499 31.4461 23.2226 30.7685 22.0477C30.1731 21.0219 29.1471 20.5447 27.9818 20.3897C26.1007 20.1451 24.2831 20.4553 22.5604 21.2067C21.813 21.5348 21.205 22.0119 21.1924 22.9065C21.1924 23.0079 20.9897 23.1749 20.863 23.1868C20.7237 23.1988 20.5337 23.1093 20.4324 23.0079C20.0904 22.6322 20.103 22.1729 20.312 21.7793C20.5337 21.3618 20.8314 20.9503 21.1987 20.6461C21.604 20.3121 22.098 20.0557 22.5984 19.8529C24.0044 19.2803 25.4991 19 27.0254 19C27.7284 19 28.4568 19.1193 29.1344 19.3042C30.6798 19.7276 31.7565 20.67 32.3581 22.1014C33.6565 25.1848 32.9028 27.9462 30.8381 30.4691C30.3315 31.0894 29.6728 31.6202 29.0014 32.0913C26.2464 34.0416 21.528 32.7176 20.711 29.4075C20.692 29.2405 20.6414 29.0973 20.5527 28.823Z",
+    fill: "white"
+  })), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("filter", {
+    id: "filter0_d_124_7844",
+    x: 0,
+    y: 0,
+    width: 52,
+    height: 52,
+    filterUnits: "userSpaceOnUse",
+    colorInterpolationFilters: "sRGB"
+  }, /*#__PURE__*/React.createElement("feFlood", {
+    floodOpacity: 0,
+    result: "BackgroundImageFix"
+  }), /*#__PURE__*/React.createElement("feColorMatrix", {
+    in: "SourceAlpha",
+    type: "matrix",
+    values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0",
+    result: "hardAlpha"
+  }), /*#__PURE__*/React.createElement("feMorphology", {
+    radius: 6,
+    operator: "dilate",
+    in: "SourceAlpha",
+    result: "effect1_dropShadow_124_7844"
+  }), /*#__PURE__*/React.createElement("feOffset", null), /*#__PURE__*/React.createElement("feComposite", {
+    in2: "hardAlpha",
+    operator: "out"
+  }), /*#__PURE__*/React.createElement("feColorMatrix", {
+    type: "matrix",
+    values: "0 0 0 0 0.898507 0 0 0 0 0.93079 0 0 0 0 0.954167 0 0 0 0.5 0"
+  }), /*#__PURE__*/React.createElement("feBlend", {
+    mode: "normal",
+    in2: "BackgroundImageFix",
+    result: "effect1_dropShadow_124_7844"
+  }), /*#__PURE__*/React.createElement("feBlend", {
+    mode: "normal",
+    in: "SourceGraphic",
+    in2: "effect1_dropShadow_124_7844",
+    result: "shape"
+  })))));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgSwitcherV2);
+export default __webpack_public_path__ + "static/media/switcher-v2.8fb78190.svg";
+export { ForwardRef as ReactComponent };
