@@ -1,2 +1,0 @@
-import "src/components/swap/index.css.ts.vanilla.css!=!../../../node_modules/@vanilla-extract/webpack-plugin/virtualFileLoader/dist/vanilla-extract-webpack-plugin-virtualFileLoader.cjs.js?{\"fileName\":\"src/components/swap/index.css.ts.vanilla.css\",\"source\":\"LmM2dGZxNzAgewogIGJvcmRlci1yYWRpdXM6IDhweDsKfQ==\"}!../../../node_modules/@vanilla-extract/webpack-plugin/extracted/dist/vanilla-extract-webpack-plugin-extracted.cjs.js"
-export var OverrideStyledHeader = 'c6tfq70';

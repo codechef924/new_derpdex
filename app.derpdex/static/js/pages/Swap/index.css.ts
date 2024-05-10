@@ -1,6 +1,0 @@
-import "src/pages/Swap/index.css.ts.vanilla.css!=!../../../node_modules/@vanilla-extract/webpack-plugin/virtualFileLoader/dist/vanilla-extract-webpack-plugin-virtualFileLoader.cjs.js?{\"fileName\":\"src/pages/Swap/index.css.ts.vanilla.css\",\"source\":\"LmVmdnc0OTAgewogIGJvcmRlci1yYWRpdXM6IDI0cHggIWltcG9ydGFudDsKICBib3JkZXI6IDRweCBzb2xpZCAjMDAwICFpbXBvcnRhbnQ7CiAgYmFja2dyb3VuZDogI0ZGRjsKICBib3gtc2hhZG93OiAzcHggM3B4IDBweCAwcHggIzAwMDsKfQouZWZ2dzQ5MSB7CiAgd2lkdGg6IDEwMCU7CiAgcGFkZGluZzogMTBweCA0MHB4OwogIGNvbG9yOiAjRkZGRkZGOwp9Ci5lZnZ3NDkyIHsKICB3aWR0aDogMTAwJTsKICBjb2xvcjogI0ZGRkZGRjsKICBwYWRkaW5nOiAxMHB4IDQwcHg7CiAgZm9udC1zaXplOiAyMHB4Owp9Ci5lZnZ3NDk0IHsKICBib3JkZXItcmFkaXVzOiAyNHB4ICFpbXBvcnRhbnQ7CiAgYm9yZGVyOiA0cHggc29saWQgIzAwMCAhaW1wb3J0YW50OwogIGJhY2tncm91bmQ6ICNGRkY7CiAgYm94LXNoYWRvdzogM3B4IDNweCAwcHggMHB4ICMwMDA7Cn0=\"}!../../../node_modules/@vanilla-extract/webpack-plugin/extracted/dist/vanilla-extract-webpack-plugin-extracted.cjs.js"
-export var OverrideSwapWrapper = 'efvw490';
-export var ButtonOnSwap = 'efvw491';
-export var ButtonOnSwapOnError = 'efvw492';
-export var OverrideArrowWrapper = 'efvw493';
-export var OverrideRouterWrapper = 'efvw494';
